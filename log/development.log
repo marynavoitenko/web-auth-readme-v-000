@@ -1280,3 +1280,1399 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-15 00:51:22 -0500
+
+
+Started GET "/search" for ::1 at 2018-05-09 01:52:07 -0400
+Processing by SearchesController#search as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=WDAYCPKVC50KH1LT4GTAOPAWTMZDKV4YRDXUXRWKW5UMOP0X&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=B50SSO5OJR1CIRXVWNLGBVNYKVTCZLHPMCDCXVNT0CCNM2EL" for ::1 at 2018-05-09 01:52:23 -0400
+
+ActionController::RoutingError (No route matches [GET] "/auth"):
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/marynaulasava/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/marynaulasava/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/marynaulasava/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.0ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (173.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (169.4ms)
+
+
+Started GET "/friends" for ::1 at 2018-05-09 02:00:12 -0400
+Processing by SearchesController#friends as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=WDAYCPKVC50KH1LT4GTAOPAWTMZDKV4YRDXUXRWKW5UMOP0X&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=2PW0MX4T2PX0T5MASRIIQKWXFZAYVOWP0VMJO5DZJP0BLIJ5" for ::1 at 2018-05-09 02:00:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"2PW0MX4T2PX0T5MASRIIQKWXFZAYVOWP0VMJO5DZJP0BLIJ5"}
+Completed 500 Internal Server Error in 252ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html>
+<html>
+<head>
+<title>foursquare</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;" />
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+body,html {height: 100%;}
+body {
+  background: #ffffff;
+  color: #4c4c4c;
+  font: 13px/140% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #0cbadf;
+  text-decoration: none;
+}
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#container {
+  height: 230px;
+  margin: -165px auto 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 32em;
+}
+.logomark {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  bottom: 20px;
+  display: block;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -30px;
+  position: absolute;
+  z-index: 2;
+}
+.wordmark {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.formStyle {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  color: #4c4c4c;
+  font-family: inherit;
+  font-size: 13px;
+  margin: 0 10px 10px 0;
+  outline: none;
+  padding: 7px;
+  width: 220px;
+  -moz-transition-duration: .33s;
+  -moz-transition-property: background, border, color, opacity, box-shadow;
+  -webkit-transition-duration: .33s;
+  -webkit-transition-property: background, border, color, opacity, box-shadow;
+  transition-duration: .33s;
+  transition-property: background, border, color, opacity, box-shadow;
+}
+.formStyle:hover {border: 1px solid #bbb;}
+.formStyle:focus {
+  background: #fefefe;
+  border: 1px solid #b3b3b3;
+  color: #333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.greenButton {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #A7E300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));
+  background: -moz-linear-gradient(top,  #A7E300,  #99D100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');
+  border: 1px solid #87b800;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,.1) 0 -1px 0;
+  text-transform: uppercase;
+}
+.greenButton:hover {
+  background: #b2eb14;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));
+  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');
+}
+.greenButton:active {
+  background: #99D100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));
+  background: -moz-linear-gradient(top,  #99D100,  #A7E300);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');
+}
+@-webkit-keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;transform:none
+  }
+}
+@keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    -ms-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none
+  }
+}
+@media screen and (max-width: 340px) {
+  #container {
+    height: auto !important;
+    margin: 40px auto 0 !important;
+    top: 0 !important;
+    width: 22em !important;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="container">
+    <img class="wordmark" src="/wordmark.png" />
+    <h1>We couldn't find the page you're looking for.</h1>
+    <h2>Search for great places nearby:</h2>
+    <form action="https://foursquare.com/explore" method="GET">
+      <input type="text" class="formStyle" name="q">
+      <button name="submit" class="greenButton" type="submit">Search</button>
+    </form>
+  </div>
+  <img class="logomark" width="40" src="/logomark.png">
+  <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker('UA-2322480-5');
+      pageTracker._trackPageview('/404');
+    } catch(err) {}
+  </script>
+</body>
+</html>
+'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.2ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.8ms)
+
+
+Started GET "/auth?code=3MZGS5Y4FEYI0QPPWO20GOVQJMXA4ULVZRK4WDF1BJJ5KRST" for ::1 at 2018-05-09 02:02:34 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"3MZGS5Y4FEYI0QPPWO20GOVQJMXA4ULVZRK4WDF1BJJ5KRST"}
+Completed 500 Internal Server Error in 166ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html>
+<html>
+<head>
+<title>foursquare</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;" />
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+body,html {height: 100%;}
+body {
+  background: #ffffff;
+  color: #4c4c4c;
+  font: 13px/140% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #0cbadf;
+  text-decoration: none;
+}
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#container {
+  height: 230px;
+  margin: -165px auto 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 32em;
+}
+.logomark {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  bottom: 20px;
+  display: block;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -30px;
+  position: absolute;
+  z-index: 2;
+}
+.wordmark {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.formStyle {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  color: #4c4c4c;
+  font-family: inherit;
+  font-size: 13px;
+  margin: 0 10px 10px 0;
+  outline: none;
+  padding: 7px;
+  width: 220px;
+  -moz-transition-duration: .33s;
+  -moz-transition-property: background, border, color, opacity, box-shadow;
+  -webkit-transition-duration: .33s;
+  -webkit-transition-property: background, border, color, opacity, box-shadow;
+  transition-duration: .33s;
+  transition-property: background, border, color, opacity, box-shadow;
+}
+.formStyle:hover {border: 1px solid #bbb;}
+.formStyle:focus {
+  background: #fefefe;
+  border: 1px solid #b3b3b3;
+  color: #333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.greenButton {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #A7E300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));
+  background: -moz-linear-gradient(top,  #A7E300,  #99D100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');
+  border: 1px solid #87b800;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,.1) 0 -1px 0;
+  text-transform: uppercase;
+}
+.greenButton:hover {
+  background: #b2eb14;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));
+  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');
+}
+.greenButton:active {
+  background: #99D100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));
+  background: -moz-linear-gradient(top,  #99D100,  #A7E300);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');
+}
+@-webkit-keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;transform:none
+  }
+}
+@keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    -ms-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none
+  }
+}
+@media screen and (max-width: 340px) {
+  #container {
+    height: auto !important;
+    margin: 40px auto 0 !important;
+    top: 0 !important;
+    width: 22em !important;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="container">
+    <img class="wordmark" src="/wordmark.png" />
+    <h1>We couldn't find the page you're looking for.</h1>
+    <h2>Search for great places nearby:</h2>
+    <form action="https://foursquare.com/explore" method="GET">
+      <input type="text" class="formStyle" name="q">
+      <button name="submit" class="greenButton" type="submit">Search</button>
+    </form>
+  </div>
+  <img class="logomark" width="40" src="/logomark.png">
+  <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker('UA-2322480-5');
+      pageTracker._trackPageview('/404');
+    } catch(err) {}
+  </script>
+</body>
+</html>
+'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.1ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.0ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.2ms)
+
+
+Started GET "/friends" for ::1 at 2018-05-09 02:05:06 -0400
+Processing by SearchesController#friends as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=WDAYCPKVC50KH1LT4GTAOPAWTMZDKV4YRDXUXRWKW5UMOP0X&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2018-05-09 02:05:28 -0400
+Processing by SearchesController#friends as HTML
+Redirected to https://foursquare.com/oauth2/authenticate?client_id=WDAYCPKVC50KH1LT4GTAOPAWTMZDKV4YRDXUXRWKW5UMOP0X&response_type=code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth
+Filter chain halted as :authenticate_user rendered or redirected
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/auth?code=SFIKW20ANPSBS0GJFVV41HWIAG0V4LEE1ZFUYIFPPWFPKJSI" for ::1 at 2018-05-09 02:05:30 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"SFIKW20ANPSBS0GJFVV41HWIAG0V4LEE1ZFUYIFPPWFPKJSI"}
+Completed 500 Internal Server Error in 201ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html>
+<html>
+<head>
+<title>foursquare</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;" />
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+body,html {height: 100%;}
+body {
+  background: #ffffff;
+  color: #4c4c4c;
+  font: 13px/140% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #0cbadf;
+  text-decoration: none;
+}
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#container {
+  height: 230px;
+  margin: -165px auto 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 32em;
+}
+.logomark {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  bottom: 20px;
+  display: block;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -30px;
+  position: absolute;
+  z-index: 2;
+}
+.wordmark {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.formStyle {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  color: #4c4c4c;
+  font-family: inherit;
+  font-size: 13px;
+  margin: 0 10px 10px 0;
+  outline: none;
+  padding: 7px;
+  width: 220px;
+  -moz-transition-duration: .33s;
+  -moz-transition-property: background, border, color, opacity, box-shadow;
+  -webkit-transition-duration: .33s;
+  -webkit-transition-property: background, border, color, opacity, box-shadow;
+  transition-duration: .33s;
+  transition-property: background, border, color, opacity, box-shadow;
+}
+.formStyle:hover {border: 1px solid #bbb;}
+.formStyle:focus {
+  background: #fefefe;
+  border: 1px solid #b3b3b3;
+  color: #333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.greenButton {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #A7E300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));
+  background: -moz-linear-gradient(top,  #A7E300,  #99D100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');
+  border: 1px solid #87b800;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,.1) 0 -1px 0;
+  text-transform: uppercase;
+}
+.greenButton:hover {
+  background: #b2eb14;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));
+  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');
+}
+.greenButton:active {
+  background: #99D100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));
+  background: -moz-linear-gradient(top,  #99D100,  #A7E300);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');
+}
+@-webkit-keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;transform:none
+  }
+}
+@keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    -ms-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none
+  }
+}
+@media screen and (max-width: 340px) {
+  #container {
+    height: auto !important;
+    margin: 40px auto 0 !important;
+    top: 0 !important;
+    width: 22em !important;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="container">
+    <img class="wordmark" src="/wordmark.png" />
+    <h1>We couldn't find the page you're looking for.</h1>
+    <h2>Search for great places nearby:</h2>
+    <form action="https://foursquare.com/explore" method="GET">
+      <input type="text" class="formStyle" name="q">
+      <button name="submit" class="greenButton" type="submit">Search</button>
+    </form>
+  </div>
+  <img class="logomark" width="40" src="/logomark.png">
+  <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker('UA-2322480-5');
+      pageTracker._trackPageview('/404');
+    } catch(err) {}
+  </script>
+</body>
+</html>
+'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.8ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.2ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (185.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/28b98de802522950b1273c71d9e7b1dd" for ::1 at 2018-05-09 02:06:32 -0400
+
+
+Started GET "/auth?code=RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK" for ::1 at 2018-05-09 02:07:10 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK"}
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.0ms)
+
+RuntimeError (#<Faraday::Response:0x007f8547d847c0 @on_complete_callbacks=[], @env=#<Faraday::Env @method=:get @body="<!DOCTYPE html>\n<html>\n<head>\n<title>foursquare</title>\n<meta name=\"viewport\" content=\"width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;\" />\n<style type=\"text/css\">\n* {\n  margin: 0;\n  padding: 0;\n  font-size: 1em;\n  text-decoration: none;\n  border: none;\n  list-style: none;\n  outline: none;\n}\nbody,html {height: 100%;}\nbody {\n  background: #ffffff;\n  color: #4c4c4c;\n  font: 13px/140% \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\na {\n  color: #0cbadf;\n  text-decoration: none;\n}\nh1 {\n  font-size: 17px;\n  font-weight: bold;\n  margin: 10px 0;\n}\nh2 {\n  font-size: 15px;\n  font-weight: normal;\n  margin: 10px 0;\n}\n#container {\n  height: 230px;\n  margin: -165px auto 0;\n  position: relative;\n  text-align: center;\n  top: 50%;\n  width: 32em;\n}\n.logomark {\n  -webkit-animation-name: fadeInDown;\n  animation-name: fadeInDown;\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  bottom: 20px;\n  display: block;\n  left: 50%;\n  margin: 0 auto;\n  margin-left: -30px;\n  position: absolute;\n  z-index: 2;\n}\n.wordmark {\n  display: block;\n  margin: 0 auto;\n  width: 250px;\n}\n.formStyle {\n  -moz-border-radius: 5px;\n  -webkit-border-radius: 5px;\n  border-radius: 5px;\n  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;\n  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;\n  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;\n  background: #fcfcfc;\n  border: 1px solid #d9d9d9;\n  color: #4c4c4c;\n  font-family: inherit;\n  font-size: 13px;\n  margin: 0 10px 10px 0;\n  outline: none;\n  padding: 7px;\n  width: 220px;\n  -moz-transition-duration: .33s;\n  -moz-transition-property: background, border, color, opacity, box-shadow;\n  -webkit-transition-duration: .33s;\n  -webkit-transition-property: background, border, color, opacity, box-shadow;\n  transition-duration: .33s;\n  transition-property: background, border, color, opacity, box-shadow;\n}\n.formStyle:hover {border: 1px solid #bbb;}\n.formStyle:focus {\n  background: #fefefe;\n  border: 1px solid #b3b3b3;\n  color: #333;\n  -webkit-box-shadow: none;\n  -moz-box-shadow: none;\n  box-shadow: none;\n}\n.greenButton {\n  -moz-border-radius: 5px;\n  -webkit-border-radius: 5px;\n  border-radius: 5px;\n  background: #A7E300;\n  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));\n  background: -moz-linear-gradient(top,  #A7E300,  #99D100);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');\n  border: 1px solid #87b800;\n  color: #fff;\n  cursor: pointer;\n  font-family: inherit;\n  font-size: 11px;\n  font-weight: bold;\n  height: 30px;\n  line-height: 28px;\n  padding: 0 10px;\n  text-align: center;\n  text-shadow: rgba(0,0,0,.1) 0 -1px 0;\n  text-transform: uppercase;\n}\n.greenButton:hover {\n  background: #b2eb14;\n  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));\n  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');\n}\n.greenButton:active {\n  background: #99D100;\n  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));\n  background: -moz-linear-gradient(top,  #99D100,  #A7E300);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');\n}\n@-webkit-keyframes fadeInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0, -25px, 0);\n    transform:translate3d(0, -25px, 0)\n  }\n  100%{\n    opacity:1;\n    -webkit-transform:none;transform:none\n  }\n}\n@keyframes fadeInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0, -25px, 0);\n    -ms-transform:translate3d(0, -25px, 0);\n    transform:translate3d(0, -25px, 0)\n  }\n  100%{\n    opacity:1;\n    -webkit-transform:none;\n    -ms-transform:none;\n    transform:none\n  }\n}\n@media screen and (max-width: 340px) {\n  #container {\n    height: auto !important;\n    margin: 40px auto 0 !important;\n    top: 0 !important;\n    width: 22em !important;\n  }\n}\n</style>\n</head>\n<body>\n  <div id=\"container\">\n    <img class=\"wordmark\" src=\"/wordmark.png\" />\n    <h1>We couldn't find the page you're looking for.</h1>\n    <h2>Search for great places nearby:</h2>\n    <form action=\"https://foursquare.com/explore\" method=\"GET\">\n      <input type=\"text\" class=\"formStyle\" name=\"q\">\n      <button name=\"submit\" class=\"greenButton\" type=\"submit\">Search</button>\n    </form>\n  </div>\n  <img class=\"logomark\" width=\"40\" src=\"/logomark.png\">\n  <script src=\"https://www.google-analytics.com/ga.js\" type=\"text/javascript\"></script>\n  <script type=\"text/javascript\">\n    try {\n      var pageTracker = _gat._getTracker('UA-2322480-5');\n      pageTracker._trackPageview('/404');\n    } catch(err) {}\n  </script>\n</body>\n</html>\n" @url=#<URI::HTTPS https://foursquare.com/oath2/access_token?client_id=WDAYCPKVC50KH1LT4GTAOPAWTMZDKV4YRDXUXRWKW5UMOP0X&client_secret=ZCZC32WP0FAI3S4WTBXAAN5AGJWORTIVU4CHAEVY0KOUBFJ5&code=RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK&grant_type=authorization_code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth> @request=#<Faraday::RequestOptions (empty)> @request_headers={"User-Agent"=>"Faraday v0.9.2"} @ssl=#<Faraday::SSLOptions verify=true> @response=#<Faraday::Response:0x007f8547d847c0 ...> @response_headers={"server"=>"nginx", "content-type"=>"text/html; charset=utf-8", "set-cookie"=>"bbhive=L2GJRH5TIBJUCQCX2NX5IJHCY4MO2M%3A%3A1525846030; Expires=Fri, 08 May 2020 06:07:10 GMT; Path=/; Domain=.foursquare.com", "etag"=>"W/\"5ad91927-12cb\"", "x-content-type-options"=>"nosniff", "transfer-encoding"=>"chunked", "accept-ranges"=>"bytes", "date"=>"Wed, 09 May 2018 06:07:10 GMT", "via"=>"1.1 varnish", "connection"=>"close", "x-served-by"=>"cache-jfk8131-JFK", "x-cache"=>"MISS", "x-cache-hits"=>"0"} @status=404>>):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.0ms)
+
+
+Started PUT "/__web_console/repl_sessions/99051ddcc68d3deb9250c629bc384781" for ::1 at 2018-05-09 02:07:44 -0400
+
+
+Started PUT "/__web_console/repl_sessions/99051ddcc68d3deb9250c629bc384781" for ::1 at 2018-05-09 02:09:27 -0400
+
+
+Started PUT "/__web_console/repl_sessions/99051ddcc68d3deb9250c629bc384781" for ::1 at 2018-05-09 02:09:31 -0400
+
+
+Started PUT "/__web_console/repl_sessions/99051ddcc68d3deb9250c629bc384781" for ::1 at 2018-05-09 02:09:34 -0400
+
+
+Started GET "/auth?code=RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK" for ::1 at 2018-05-09 02:10:45 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK"}
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 0.0ms)
+
+RuntimeError (#<Faraday::Response:0x007f8547605350 @on_complete_callbacks=[], @env=#<Faraday::Env @method=:get @body="<!DOCTYPE html>\n<html>\n<head>\n<title>foursquare</title>\n<meta name=\"viewport\" content=\"width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;\" />\n<style type=\"text/css\">\n* {\n  margin: 0;\n  padding: 0;\n  font-size: 1em;\n  text-decoration: none;\n  border: none;\n  list-style: none;\n  outline: none;\n}\nbody,html {height: 100%;}\nbody {\n  background: #ffffff;\n  color: #4c4c4c;\n  font: 13px/140% \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\na {\n  color: #0cbadf;\n  text-decoration: none;\n}\nh1 {\n  font-size: 17px;\n  font-weight: bold;\n  margin: 10px 0;\n}\nh2 {\n  font-size: 15px;\n  font-weight: normal;\n  margin: 10px 0;\n}\n#container {\n  height: 230px;\n  margin: -165px auto 0;\n  position: relative;\n  text-align: center;\n  top: 50%;\n  width: 32em;\n}\n.logomark {\n  -webkit-animation-name: fadeInDown;\n  animation-name: fadeInDown;\n  -webkit-animation-duration: 1s;\n  animation-duration: 1s;\n  -webkit-animation-fill-mode: both;\n  animation-fill-mode: both;\n  bottom: 20px;\n  display: block;\n  left: 50%;\n  margin: 0 auto;\n  margin-left: -30px;\n  position: absolute;\n  z-index: 2;\n}\n.wordmark {\n  display: block;\n  margin: 0 auto;\n  width: 250px;\n}\n.formStyle {\n  -moz-border-radius: 5px;\n  -webkit-border-radius: 5px;\n  border-radius: 5px;\n  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;\n  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;\n  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;\n  background: #fcfcfc;\n  border: 1px solid #d9d9d9;\n  color: #4c4c4c;\n  font-family: inherit;\n  font-size: 13px;\n  margin: 0 10px 10px 0;\n  outline: none;\n  padding: 7px;\n  width: 220px;\n  -moz-transition-duration: .33s;\n  -moz-transition-property: background, border, color, opacity, box-shadow;\n  -webkit-transition-duration: .33s;\n  -webkit-transition-property: background, border, color, opacity, box-shadow;\n  transition-duration: .33s;\n  transition-property: background, border, color, opacity, box-shadow;\n}\n.formStyle:hover {border: 1px solid #bbb;}\n.formStyle:focus {\n  background: #fefefe;\n  border: 1px solid #b3b3b3;\n  color: #333;\n  -webkit-box-shadow: none;\n  -moz-box-shadow: none;\n  box-shadow: none;\n}\n.greenButton {\n  -moz-border-radius: 5px;\n  -webkit-border-radius: 5px;\n  border-radius: 5px;\n  background: #A7E300;\n  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));\n  background: -moz-linear-gradient(top,  #A7E300,  #99D100);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');\n  border: 1px solid #87b800;\n  color: #fff;\n  cursor: pointer;\n  font-family: inherit;\n  font-size: 11px;\n  font-weight: bold;\n  height: 30px;\n  line-height: 28px;\n  padding: 0 10px;\n  text-align: center;\n  text-shadow: rgba(0,0,0,.1) 0 -1px 0;\n  text-transform: uppercase;\n}\n.greenButton:hover {\n  background: #b2eb14;\n  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));\n  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');\n}\n.greenButton:active {\n  background: #99D100;\n  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));\n  background: -moz-linear-gradient(top,  #99D100,  #A7E300);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');\n}\n@-webkit-keyframes fadeInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0, -25px, 0);\n    transform:translate3d(0, -25px, 0)\n  }\n  100%{\n    opacity:1;\n    -webkit-transform:none;transform:none\n  }\n}\n@keyframes fadeInDown{\n  0%{\n    opacity:0;\n    -webkit-transform:translate3d(0, -25px, 0);\n    -ms-transform:translate3d(0, -25px, 0);\n    transform:translate3d(0, -25px, 0)\n  }\n  100%{\n    opacity:1;\n    -webkit-transform:none;\n    -ms-transform:none;\n    transform:none\n  }\n}\n@media screen and (max-width: 340px) {\n  #container {\n    height: auto !important;\n    margin: 40px auto 0 !important;\n    top: 0 !important;\n    width: 22em !important;\n  }\n}\n</style>\n</head>\n<body>\n  <div id=\"container\">\n    <img class=\"wordmark\" src=\"/wordmark.png\" />\n    <h1>We couldn't find the page you're looking for.</h1>\n    <h2>Search for great places nearby:</h2>\n    <form action=\"https://foursquare.com/explore\" method=\"GET\">\n      <input type=\"text\" class=\"formStyle\" name=\"q\">\n      <button name=\"submit\" class=\"greenButton\" type=\"submit\">Search</button>\n    </form>\n  </div>\n  <img class=\"logomark\" width=\"40\" src=\"/logomark.png\">\n  <script src=\"https://www.google-analytics.com/ga.js\" type=\"text/javascript\"></script>\n  <script type=\"text/javascript\">\n    try {\n      var pageTracker = _gat._getTracker('UA-2322480-5');\n      pageTracker._trackPageview('/404');\n    } catch(err) {}\n  </script>\n</body>\n</html>\n" @url=#<URI::HTTPS https://foursquare.com/oath2/access_token?client_id=WDAYCPKVC50KH1LT4GTAOPAWTMZDKV4YRDXUXRWKW5UMOP0X&client_secret=ZCZC32WP0FAI3S4WTBXAAN5AGJWORTIVU4CHAEVY0KOUBFJ5&code=RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK&grant_type=authorization_code&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fauth> @request=#<Faraday::RequestOptions (empty)> @request_headers={"User-Agent"=>"Faraday v0.9.2"} @ssl=#<Faraday::SSLOptions verify=true> @response=#<Faraday::Response:0x007f8547605350 ...> @response_headers={"server"=>"nginx", "content-type"=>"text/html; charset=utf-8", "set-cookie"=>"bbhive=NENSQT2XZ0SMPZRRPRQJM45BH4O33T%3A%3A1525846245; Expires=Fri, 08 May 2020 06:10:45 GMT; Path=/; Domain=.foursquare.com", "etag"=>"W/\"5ad91927-12cb\"", "x-content-type-options"=>"nosniff", "transfer-encoding"=>"chunked", "accept-ranges"=>"bytes", "date"=>"Wed, 09 May 2018 06:10:45 GMT", "via"=>"1.1 varnish", "connection"=>"close", "x-served-by"=>"cache-jfk8145-JFK", "x-cache"=>"MISS", "x-cache-hits"=>"0"} @status=404>>):
+  app/controllers/sessions_controller.rb:12:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.0ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (146.5ms)
+
+
+Started GET "/auth?code=RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK" for ::1 at 2018-05-09 02:11:02 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK"}
+Completed 500 Internal Server Error in 163ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html>
+<html>
+<head>
+<title>foursquare</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;" />
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+body,html {height: 100%;}
+body {
+  background: #ffffff;
+  color: #4c4c4c;
+  font: 13px/140% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #0cbadf;
+  text-decoration: none;
+}
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#container {
+  height: 230px;
+  margin: -165px auto 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 32em;
+}
+.logomark {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  bottom: 20px;
+  display: block;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -30px;
+  position: absolute;
+  z-index: 2;
+}
+.wordmark {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.formStyle {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  color: #4c4c4c;
+  font-family: inherit;
+  font-size: 13px;
+  margin: 0 10px 10px 0;
+  outline: none;
+  padding: 7px;
+  width: 220px;
+  -moz-transition-duration: .33s;
+  -moz-transition-property: background, border, color, opacity, box-shadow;
+  -webkit-transition-duration: .33s;
+  -webkit-transition-property: background, border, color, opacity, box-shadow;
+  transition-duration: .33s;
+  transition-property: background, border, color, opacity, box-shadow;
+}
+.formStyle:hover {border: 1px solid #bbb;}
+.formStyle:focus {
+  background: #fefefe;
+  border: 1px solid #b3b3b3;
+  color: #333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.greenButton {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #A7E300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));
+  background: -moz-linear-gradient(top,  #A7E300,  #99D100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');
+  border: 1px solid #87b800;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,.1) 0 -1px 0;
+  text-transform: uppercase;
+}
+.greenButton:hover {
+  background: #b2eb14;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));
+  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');
+}
+.greenButton:active {
+  background: #99D100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));
+  background: -moz-linear-gradient(top,  #99D100,  #A7E300);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');
+}
+@-webkit-keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;transform:none
+  }
+}
+@keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    -ms-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none
+  }
+}
+@media screen and (max-width: 340px) {
+  #container {
+    height: auto !important;
+    margin: 40px auto 0 !important;
+    top: 0 !important;
+    width: 22em !important;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="container">
+    <img class="wordmark" src="/wordmark.png" />
+    <h1>We couldn't find the page you're looking for.</h1>
+    <h2>Search for great places nearby:</h2>
+    <form action="https://foursquare.com/explore" method="GET">
+      <input type="text" class="formStyle" name="q">
+      <button name="submit" class="greenButton" type="submit">Search</button>
+    </form>
+  </div>
+  <img class="logomark" width="40" src="/logomark.png">
+  <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker('UA-2322480-5');
+      pageTracker._trackPageview('/404');
+    } catch(err) {}
+  </script>
+</body>
+</html>
+'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (99.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.1ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (156.9ms)
+
+
+Started PUT "/__web_console/repl_sessions/561ac01f09b175ea1f4c8bd1be37bfd0" for ::1 at 2018-05-09 02:11:40 -0400
+
+
+Started PUT "/__web_console/repl_sessions/561ac01f09b175ea1f4c8bd1be37bfd0" for ::1 at 2018-05-09 02:11:49 -0400
+
+
+Started GET "/auth?code=RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK" for ::1 at 2018-05-09 02:12:34 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"RCU0UPC42KS2H44ZEA5K1ZCJ4BKXGF5ACWL1OYICQDJTL1FK"}
+Completed 500 Internal Server Error in 193ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html>
+<html>
+<head>
+<title>foursquare</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;" />
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+body,html {height: 100%;}
+body {
+  background: #ffffff;
+  color: #4c4c4c;
+  font: 13px/140% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #0cbadf;
+  text-decoration: none;
+}
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#container {
+  height: 230px;
+  margin: -165px auto 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 32em;
+}
+.logomark {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  bottom: 20px;
+  display: block;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -30px;
+  position: absolute;
+  z-index: 2;
+}
+.wordmark {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.formStyle {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  color: #4c4c4c;
+  font-family: inherit;
+  font-size: 13px;
+  margin: 0 10px 10px 0;
+  outline: none;
+  padding: 7px;
+  width: 220px;
+  -moz-transition-duration: .33s;
+  -moz-transition-property: background, border, color, opacity, box-shadow;
+  -webkit-transition-duration: .33s;
+  -webkit-transition-property: background, border, color, opacity, box-shadow;
+  transition-duration: .33s;
+  transition-property: background, border, color, opacity, box-shadow;
+}
+.formStyle:hover {border: 1px solid #bbb;}
+.formStyle:focus {
+  background: #fefefe;
+  border: 1px solid #b3b3b3;
+  color: #333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.greenButton {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #A7E300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));
+  background: -moz-linear-gradient(top,  #A7E300,  #99D100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');
+  border: 1px solid #87b800;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,.1) 0 -1px 0;
+  text-transform: uppercase;
+}
+.greenButton:hover {
+  background: #b2eb14;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));
+  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');
+}
+.greenButton:active {
+  background: #99D100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));
+  background: -moz-linear-gradient(top,  #99D100,  #A7E300);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');
+}
+@-webkit-keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;transform:none
+  }
+}
+@keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    -ms-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none
+  }
+}
+@media screen and (max-width: 340px) {
+  #container {
+    height: auto !important;
+    margin: 40px auto 0 !important;
+    top: 0 !important;
+    width: 22em !important;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="container">
+    <img class="wordmark" src="/wordmark.png" />
+    <h1>We couldn't find the page you're looking for.</h1>
+    <h2>Search for great places nearby:</h2>
+    <form action="https://foursquare.com/explore" method="GET">
+      <input type="text" class="formStyle" name="q">
+      <button name="submit" class="greenButton" type="submit">Search</button>
+    </form>
+  </div>
+  <img class="logomark" width="40" src="/logomark.png">
+  <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker('UA-2322480-5');
+      pageTracker._trackPageview('/404');
+    } catch(err) {}
+  </script>
+</body>
+</html>
+'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (73.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (67.8ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (143.0ms)
+
+
+Started GET "/auth?code=C4HAFVJQZO4Q1BEIAIXZHAEB45JZCVXVZWTCJJ43UNWNIMDE" for ::1 at 2018-05-09 02:12:40 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"C4HAFVJQZO4Q1BEIAIXZHAEB45JZCVXVZWTCJJ43UNWNIMDE"}
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 0.0ms)
+
+JSON::ParserError (784: unexpected token at '<!DOCTYPE html>
+<html>
+<head>
+<title>foursquare</title>
+<meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=1;" />
+<style type="text/css">
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  outline: none;
+}
+body,html {height: 100%;}
+body {
+  background: #ffffff;
+  color: #4c4c4c;
+  font: 13px/140% "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #0cbadf;
+  text-decoration: none;
+}
+h1 {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 15px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+#container {
+  height: 230px;
+  margin: -165px auto 0;
+  position: relative;
+  text-align: center;
+  top: 50%;
+  width: 32em;
+}
+.logomark {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  bottom: 20px;
+  display: block;
+  left: 50%;
+  margin: 0 auto;
+  margin-left: -30px;
+  position: absolute;
+  z-index: 2;
+}
+.wordmark {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.formStyle {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  -webkit-box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  box-shadow: inset rgba(0,0,0,.1) 0 0 3px;
+  background: #fcfcfc;
+  border: 1px solid #d9d9d9;
+  color: #4c4c4c;
+  font-family: inherit;
+  font-size: 13px;
+  margin: 0 10px 10px 0;
+  outline: none;
+  padding: 7px;
+  width: 220px;
+  -moz-transition-duration: .33s;
+  -moz-transition-property: background, border, color, opacity, box-shadow;
+  -webkit-transition-duration: .33s;
+  -webkit-transition-property: background, border, color, opacity, box-shadow;
+  transition-duration: .33s;
+  transition-property: background, border, color, opacity, box-shadow;
+}
+.formStyle:hover {border: 1px solid #bbb;}
+.formStyle:focus {
+  background: #fefefe;
+  border: 1px solid #b3b3b3;
+  color: #333;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.greenButton {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #A7E300;
+  background: -webkit-gradient(linear, left top, left bottom, from(#A7E300), to(#99D100));
+  background: -moz-linear-gradient(top,  #A7E300,  #99D100);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#A7E300', endColorstr='#99D100');
+  border: 1px solid #87b800;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 28px;
+  padding: 0 10px;
+  text-align: center;
+  text-shadow: rgba(0,0,0,.1) 0 -1px 0;
+  text-transform: uppercase;
+}
+.greenButton:hover {
+  background: #b2eb14;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b2eb14), to(#a4da14));
+  background: -moz-linear-gradient(top,  #b2eb14,  #a4da14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b2eb14', endColorstr='#a4da14');
+}
+.greenButton:active {
+  background: #99D100;
+  background: -webkit-gradient(linear, left top, left bottom, from(#99D100), to(#A7E300));
+  background: -moz-linear-gradient(top,  #99D100,  #A7E300);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99D100', endColorstr='#A7E300');
+}
+@-webkit-keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;transform:none
+  }
+}
+@keyframes fadeInDown{
+  0%{
+    opacity:0;
+    -webkit-transform:translate3d(0, -25px, 0);
+    -ms-transform:translate3d(0, -25px, 0);
+    transform:translate3d(0, -25px, 0)
+  }
+  100%{
+    opacity:1;
+    -webkit-transform:none;
+    -ms-transform:none;
+    transform:none
+  }
+}
+@media screen and (max-width: 340px) {
+  #container {
+    height: auto !important;
+    margin: 40px auto 0 !important;
+    top: 0 !important;
+    width: 22em !important;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="container">
+    <img class="wordmark" src="/wordmark.png" />
+    <h1>We couldn't find the page you're looking for.</h1>
+    <h2>Search for great places nearby:</h2>
+    <form action="https://foursquare.com/explore" method="GET">
+      <input type="text" class="formStyle" name="q">
+      <button name="submit" class="greenButton" type="submit">Search</button>
+    </form>
+  </div>
+  <img class="logomark" width="40" src="/logomark.png">
+  <script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker('UA-2322480-5');
+      pageTracker._trackPageview('/404');
+    } catch(err) {}
+  </script>
+</body>
+</html>
+'):
+  app/controllers/sessions_controller.rb:13:in `create'
+
+
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.6ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/marynaulasava/.rvm/gems/ruby-2.3.3/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.4ms)
+
+
+Started GET "/auth?code=UCSZJUZFN3GUZPDON0ZAOS10DUEPF15HX0W3AILQQZNZOHGN" for ::1 at 2018-05-09 02:13:46 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"code"=>"UCSZJUZFN3GUZPDON0ZAOS10DUEPF15HX0W3AILQQZNZOHGN"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 136ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-09 02:13:46 -0400
+Processing by SearchesController#search as HTML
+  Rendered searches/search.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 509ms (Views: 507.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/friends" for ::1 at 2018-05-09 02:14:32 -0400
+Processing by SearchesController#friends as HTML
+  Rendered searches/friends.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 162ms (Views: 35.3ms | ActiveRecord: 0.0ms)
